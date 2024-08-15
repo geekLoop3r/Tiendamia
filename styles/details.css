@@ -347,7 +347,6 @@ footer .container {
 }
 
 .columns-container {
-    margin: 40px auto;
     flex: 1;
     display: flex;
     justify-content: space-between;
