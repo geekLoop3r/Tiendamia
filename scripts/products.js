@@ -25,11 +25,24 @@ class Product {
 
 }
 
-const prod1 = new Product();
-const prod2 = new Product("123abc", "Tablet samsung", 1500);
-const prod5 = new Product("1234aaa", "Iphone 14", 4000, 12, "https://oechsle.vteximg.com.br/arquivos/ids/17874187-1500-1500/image-a14b5570f2db42eb94c6c2a64595e7e6.jpg?v=638489010898130000", false);
+const prod1 = new Product("1234aaa", "Iphone 14", 4000, 12, "https://oechsle.vteximg.com.br/arquivos/ids/17874187-1500-1500/image-a14b5570f2db42eb94c6c2a64595e7e6.jpg?v=638489010898130000", false);
+const prod2 = new Product("1234aaa", "Iphone 14", 4000, 12, "https://oechsle.vteximg.com.br/arquivos/ids/17874187-1500-1500/image-a14b5570f2db42eb94c6c2a64595e7e6.jpg?v=638489010898130000", false);
+const prod3 = new Product("1234aaa", "Iphone 14", 4000, 12, "https://oechsle.vteximg.com.br/arquivos/ids/17874187-1500-1500/image-a14b5570f2db42eb94c6c2a64595e7e6.jpg?v=638489010898130000", false);
+const prod4 = new Product("1234aaa", "Iphone 15", 4000, 12, "https://oechsle.vteximg.com.br/arquivos/ids/17874187-1500-1500/image-a14b5570f2db42eb94c6c2a64595e7e6.jpg?v=638489010898130000", false);
+const prod5 = new Product();
+const prod6 = new Product();
 
-prod5.sellUnits(10);
-console.log(prod5);
-prod5.sellUnits(2);
-console.log(prod5);
+const products = [prod1, prod2, prod3, prod4];
+const colors = [];
+
+// Agregamos dos elementos al array
+products.unshift(prod5); // agregando un elemento al inicio del array
+products.push(prod6); // agregando un elemendo al final del array
+
+console.log(products);
+
+// Eliminar elementos del array
+products.shift();
+products.pop();
+
+console.log(products);
